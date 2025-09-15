@@ -22,7 +22,7 @@ LitTransProQA/
 │   └── xcomet_ranking.py      # Ranking task
 ├── prompting_method/          # Prompt-based approaches
 │   ├── template/             # Prompt templates
-│   ├── QA_translators/       # translator votes
+│   ├── QA_translators/       # translator voting results
 │   ├── prompt_openrouter.py  # API integration
 │   ├── run_all_models.py     # Model execution script
 │   └── build_dataset.py      # Prompt preparation
@@ -75,7 +75,6 @@ python src/evaluate.py --model-path models/model.pt
 
 ## 📊 Results Overview
 ![LitTransproQA summary](Fig/figure1.png)
-You may also include visualizations like confusion matrices, training curves, etc.
 
 ## 📌 References
 
@@ -103,7 +102,7 @@ Feel free to contribute by submitting a pull request.
 
 Specify the license under which this code is shared.
 
-> This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+> This project is licensed under the CC License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
