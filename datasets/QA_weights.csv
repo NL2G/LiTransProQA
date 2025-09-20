@@ -1,0 +1,26 @@
+QA,score,idx_number
+Am I on guard for “false friends” or misleading cognates between the source and target languages that could distort the meaning?,4.857142857142857,1
+"Do my word choices convey the same connotations in the target language? For example, while 'Latin school' in a German context implies a prestigious institution, a direct translation into Chinese may require a term like 'better school' to convey the same idea.",4.285714285714286,4
+"Does the translated text flow naturally in the target language, following the conventional writing style and grammar?",4.714285714285714,7
+"Have I adjusted idioms, humor or figures of speech to maintain the original’s intent and effect within the cultural context of the target language? (e.g., ""raining cats and dogs"" → ""llueve a cántaros"" in Spanish, or ""下倾盆大雨"" in Chinese)",4.571428571428571,12
+"When culture-specific terms (food, clothing, idioms, holidays etc.), practices, or references in the source are unfamiliar to  the target readers, have I adapted these in a way that a target reader can understand and appreciate (by using the original term, adding a brief explanation, or substituting with a culturally analogous reference/an equivalent concept etc.)?",4.571428571428571,13
+"Does the translation preserve the same meaning and implications of figurative language, such as metaphors or similes?  ",4.571428571428571,14
+"Am I considering the context and unspoken implications so that the translation reflects the source text’s pragmatic meaning (tone, irony, implicature), not just the dictionary definitions of individual words?",4.714285714285714,15
+"Am I handling the cultural differences in how certain emotions, gestures, or expressions are described in an clear and understandable way?  ",4.285714285714286,18
+Am I avoiding excessive domestication that erases the source culture’s identity?,4.714285714285714,20
+Am I balancing foreignizing strategies with the need for clarity so that I don’t drift into exoticizing the source culture for the target reader?,4.714285714285714,21
+"Have I considered the source culture’s context (historical period, locale, customs) well enough to translate cultural references accurately, knowing that each language group has its own culturally specific features?",4.571428571428571,22
+Does the translation evoke the same cultural mood as the original?,4.0,24
+Does my translation maintain the same tone and level of formality for each character or narrative voice as the original?,4.714285714285714,26
+"Is the tone (formal, informal, neutral, colloquial, etc.) consistent in my translation?",4.285714285714286,28
+Does the narrative voice in my translation match the original novel’s narrative voice?,4.857142857142857,29
+"Am I preserving the author’s unique voice or style in the source text (e.g., terse and minimalist, or elaborate and lyrical) in my translation?",4.714285714285714,30
+Have I preserved the narrative point of view and any shifts in perspective exactly as in the original?,4.285714285714286,31
+Does the translation convey the author’s descriptive imagery vividly and accurately?,4.571428571428571,33
+"Have I maintained consistency in terminology, character names, slang, dialect and other key details throughout the text to avoid confusing the reader?",5.0,35
+Have I kept track of plot details to ensure nothing got lost or altered in translation that would cause inconsistencies?,4.428571428571429,36
+Have I maintained the same level of ambiguity or precision as the source text?,4.285714285714286,39
+Would a reader of the translation sense the same narrator persona or character as in the original?,4.285714285714286,41
+Am I conveying the author’s intent behind each passage – the subtext or purpose of why they wrote it – through my translation choices?,4.714285714285714,42
+"Is the translation phrased in the most natural way for the target language, achieving the “closest natural equivalent” of the source message?",4.142857142857143,44
+"Have I considered equivalence at multiple levels, at the word level, sentence level, textual level (cohesion), and pragmatic level (overall effect) – to ensure the translation works as a coherent whole?",4.0,45
