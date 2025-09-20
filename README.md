@@ -1,7 +1,4 @@
-# LiTransProQA
-LLM-based Literary Translation evaluation metric with Professional Question Answering
-
-# Project Name <br><sub><sup>A one-line description of what this project does or solves</sup></sub>
+# LiTransProQA <br><sub><sup>LLM-based Literary Translation evaluation metric with Professional Question Answering</sup></sub>
 <p align="left">
   <img src="https://drive.google.com/uc?export=view&id=19cBCYrAndz6ncbx-QxSa4ZpPvYVZ-cxK" width="80" alt="Lab Logo" />
 </p>
