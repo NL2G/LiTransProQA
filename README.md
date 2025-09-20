@@ -6,20 +6,21 @@ LLM-based Literary Translation evaluation metric with Professional Question Answ
   <img src="https://drive.google.com/uc?export=view&id=19cBCYrAndz6ncbx-QxSa4ZpPvYVZ-cxK" width="80" alt="Lab Logo" />
 </p>
 
-[![🤖 Datasets](https://img.shields.io/badge/%F0%9F%A4%96-models-yellow)](https://huggingface.co/models?library=your-library-name)
-[![📄 arXiv](https://img.shields.io/badge/View%20on%20arXiv-B31B1B?logo=arxiv&labelColor=gray)](https://arxiv.org/abs/your-arxiv-id)
+[![🤖 Models and datasets](https://img.shields.io/badge/%F0%9F%A4%96-models-yellow)](https://huggingface.co/rnzzzh/lit_score_finetuning)
+[![📄 arXiv](https://img.shields.io/badge/View%20on%20arXiv-B31B1B?logo=arxiv&labelColor=gray)](https://arxiv.org/abs/2505.05423)
 
 ## 📁 Repository Structure
 ```
 LitTransProQA/
 ├── datasets/                    # Dataset directory
-│   ├── finetuning_dataset/     # Datasets for model fine-tuning
-│   └── evaluation_set/         # Datasets for evaluation
-├── finetuneing_method/         # Fine-tuning related code
+│   ├── QA_weights.csv          # selected question weights
+│   ├── benchmark_dataset_all_src_tgt.csv # LitEval + Iyyer: full sample ID 
+│   └── sampled_benchmark.csv   # Sampled ID for validation set
+├── finetuning_method/         # Fine-tuning related code
 │   ├── configs/               # Configuration files
-│   ├── xcomet_regression.py   # Regression task
+│   ├── xcomet_regression.py   # Regression task finetuning
 │   ├── xcomet_inference.py    # Inference implementation
-│   └── xcomet_ranking.py      # Ranking task
+│   └── xcomet_ranking.py      # Ranking task finetuning
 ├── prompting_method/          # Prompt-based approaches
 │   ├── template/             # Prompt templates
 │   ├── QA_translators/       # translator voting results
@@ -34,56 +35,47 @@ LitTransProQA/
 
 ## 🛠️ Setup & Installation
 
+Dataset: Due to copyright and licensing restrictions, we only release the IDs on GitHub. The complete test datasets, including source and target texts, can be downloaded via [Google form]() for research purposes only. 
+
+Installation: 
+- Install the [COMET](https://github.com/Unbabel/COMET/tree/master) for task finetuning and run the xcomet evaluation.
+Guide from COMET: requires python 3.8 or above. Simple installation from PyPI
+```bash
+pip install --upgrade pip  # ensures that pip is current 
+pip install unbabel-comet
+```
+- Install [mt-metrics-eval](https://github.com/google-research/mt-metrics-eval/) to reproduce correlation results using mt_metrics_eval_LitEval.ipynb.   
 
 ---
 
 ## 🚀 Usage
 
 - **Multiple Assessment Methods**:
-  - Fine-tuning based approaches using XCOMET
+  - Fine-tuning based approaches using XCOMET, see [finetuning_method](finetuning_method/)
   - Prompt-based LitTransProQA: question-answering-based translation evaluation
   - Other SOTA metrics
  
-    
-- Instructions to run the project or reproduce results:
-
+- Instructions to run LitTransProQA: one needs to download the dataset containing the source and target from the instructions above first. 
 ```bash
-# Example: Running a training script
-python src/train.py --config configs/config.yaml
+# Step1: Build prompts from datasets; one can modify the template  
+python prompting_method/build_dataset.py 
 
-# Example: Generating predictions
-python src/predict.py --input data/test.json --output outputs/predictions.json
+# Step2: Scoring using a single {model}  
+python prompting_method/prompt_openrouter.py \
+              --file final_set/final_set_with_QA.csv \
+              --model {model} \
+              --content-column QA \
+              --temperature 0.3 \
+              --output-dir final_results/
+
+# Or Step2: Scoring using multiple models, e.g., from model_list.txt
+python prompting_method/run_all_models.py 
 ```
 
-Or you can explore the notebooks inside the notebooks/ directory for interactive examples.
-
----
-
-## 🧪 Testing & Evaluation
-
-To evaluate model performance or run tests:
-
-```bash
-# Run unit tests (if available)
-pytest tests/
-
-# Evaluate with specific metrics
-python src/evaluate.py --model-path models/model.pt
-```
-
----
+- Instruction to reproduce results using mt-metrics-eval, see first markdowm in mt_metrics_eval_LitEval.ipynb.
 
 ## 📊 Results Overview
 ![LitTransproQA summary](Fig/figure1.png)
-
-## 📌 References
-
-(Optional) Mention datasets, papers, repositories, or blogs used as a base or for inspiration:
-
-- [Dataset or Paper Name](https://link-to-resource)
-- [Blog Post or GitHub Repo](https://link)
-
----
 
 ## 🤝 Contributing
 
