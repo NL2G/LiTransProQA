@@ -32,7 +32,7 @@ LitTransProQA/
 
 ## 🛠️ Setup & Installation
 
-Dataset: Due to copyright and licensing restrictions, we only release the IDs on GitHub. The complete test datasets, including source and target texts, can be downloaded via [Google form]() for research purposes only. 
+Dataset: Due to copyright and licensing restrictions, we only release the IDs on GitHub. The complete test datasets, including source and target texts, can be downloaded via [Google form]() (coming soon, awaiting permission and ethical checks) for research purposes only. 
 
 Installation: 
 - Install the [COMET](https://github.com/Unbabel/COMET/tree/master) for task finetuning and run the xcomet evaluation.
