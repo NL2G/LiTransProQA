@@ -54,7 +54,7 @@ pip install unbabel-comet
  
 - Instructions to run LitTransProQA: To reproduce results or use for scoring, one must first download the dataset containing the source and target information from the instructions above. Alternatively, you can replace this with your own data. 
 ```bash
-# Step1: Build prompts from datasets; one can modify the template  
+# Step1: Build prompts from datasets (.csv containing "src" [source] and "tgt" [target] columns); one can modify the template  
 python prompting_method/build_dataset.py 
 
 # Step2: Scoring using a single {model}  
