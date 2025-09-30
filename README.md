@@ -52,7 +52,7 @@ pip install unbabel-comet
   - Prompt-based LitTransProQA: question-answering-based translation evaluation
   - Other SOTA metrics
  
-- Instructions to run LitTransProQA: one needs to download the dataset containing the source and target from the instructions above first. 
+- Instructions to run LitTransProQA: To reproduce results or use for scoring, one must first download the dataset containing the source and target information from the instructions above. Alternatively, you can replace this with your own data. 
 ```bash
 # Step1: Build prompts from datasets; one can modify the template  
 python prompting_method/build_dataset.py 
