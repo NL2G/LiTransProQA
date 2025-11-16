@@ -100,14 +100,26 @@ Specify the license under which this code is shared.
 If you use this work in your research, please cite it as:
 
 ```bibtex
-@misc{zhang2025litransproqallmbasedliterarytranslation,
-      title={LiTransProQA: an LLM-based Literary Translation evaluation metric with Professional Question Answering}, 
-      author={Ran Zhang and Wei Zhao and Lieve Macken and Steffen Eger},
-      year={2025},
-      eprint={2505.05423},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.05423}, 
+@inproceedings{zhang-etal-2025-litransproqa,
+    title = "{L}i{T}rans{P}ro{QA}: An {LLM}-based Literary Translation Evaluation Metric with Professional Question Answering",
+    author = "Zhang, Ran  and
+      Zhao, Wei  and
+      Macken, Lieve  and
+      Eger, Steffen",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1482/",
+    doi = "10.18653/v1/2025.emnlp-main.1482",
+    pages = "29087--29109",
+    ISBN = "979-8-89176-332-6",
+    abstract = "The impact of Large Language Models (LLMs) has extended into literary domains. However, existing evaluation metrics for literature prioritize mechanical accuracy over artistic expression and tend to overrate machine translation as being superior to human translation from experienced professionals. In the long run, this bias could result in an irreversible decline in translation quality and cultural authenticity. In response to the urgent need for a specialized literary evaluation metric, we introduce LITRANSPROQA, a novel, reference-free, LLM-based question-answering framework designed for literary translation evaluation. LITRANSPROQA integrates humans in the loop to incorporate insights from professional literary translators and researchers, focusing on critical elements in literary quality assessment such as literary devices, cultural understanding, and authorial voice. Our extensive evaluation shows that while literary-finetuned XCOMET-XL yields marginal gains, LITRANSPROQA substantially outperforms current metrics, achieving up to 0.07 gain in correlation and surpassing the best state-of-the-art metrics by over 15 points in adequacy assessments. Incorporating professional translator insights as weights further improves performance, highlighting the value of translator inputs. Notably, LITRANSPROQA reaches an adequacy performance comparable to trained linguistic student evaluators, though it still falls behind experienced professional translators. LITRANSPROQA shows broad applicability to open-source models like LLaMA3.3-70b and Qwen2.5-32b, indicating its potential as an accessible and training-free tool for evaluating literary translations that require local processing due to copyright or ethical considerations."
 }
 ```
 
